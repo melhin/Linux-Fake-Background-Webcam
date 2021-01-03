@@ -9,9 +9,7 @@ RUN apt-get update && \
 
 WORKDIR /src
 
-COPY foreground.jpg \
-    foreground-mask.png \
-    background.jpg \
+COPY background* \
     fake.py \
     akvcam.py \
     requirements.txt \
